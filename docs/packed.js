@@ -30451,7 +30451,7 @@ function createImageSource(image, options = {}) {
     const session = await cameraKit.createSession()
     document.getElementById ('canvas').replaceWith (session.output.live)
 
-    const { lenses } = await cameraKit.lensRepository.loadLensGroups (['9cfe149b-dcf3-46c0-8bd4-cb3a98f43cc9'])
+    const { lenses } = await cameraKit.lensRepository.loadLensGroups (['eb2e1d23-be92-496c-884c-b14a0ac7ef74'])
 
     session.applyLens (lenses[0])
     let mediaStream = await navigator. mediaDevices.getUserMedia ({ video: true });
